@@ -1,0 +1,129 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+#searchbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#searchbar a {
+    text-decoration: none;
+}
+
+.img1, .logofb, .logotit, .logoinsta {
+    margin-right: 10px;
+}
+
+.img2 {
+    max-width: 100px;
+}
+
+/* Title and Navigation */
+.sub-title {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.com a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides img {
+    max-width: 100%;
+}
+
+.numbers {
+    text-align: center;
+}
+
+.numbers .dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.numbers .dot.active {
+    background-color: #007bff;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 8px;
+    font-weight: bold;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Content Section */
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}

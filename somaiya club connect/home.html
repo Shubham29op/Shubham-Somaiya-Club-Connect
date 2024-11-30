@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="h.css">
+</head>
+<header id="searchbar">
+    
+<a href="https://kjsit.somaiya.edu.in/"><img class="img1" src="tlogo.jpg" alt="SOMAIYA Logo"></a>
+<a href="https://www.facebook.com/kjsieitofficial"><img class="logofb" src="fb logo.png" alt=""></a>
+<a href="https://www.twitter.com/kjsieit1"><img class="logotit" src="twitter logo.png" alt=""></a>
+<a target="_blank" href="https://www.instagram.com/kjsieit_22/"><img class="logoinsta" src="insta logo.png" alt="insta"></a>
+<img class="img2" src="somaiya trust logo.jpg" alt="SOMAIYA trust">
+</header>
+<body>
+        <!-- <h1 class="title">KJ SOMAIYA INSTITUTE OF TECHNOLOGY</h1> -->
+        <h2 class="sub-title">CLUB CONNECT</h2>
+        <nav>
+            <ul>
+                <li class="com"><a href="#">Committees</a></li>
+            </ul>
+        </nav>
+    
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="csi_kjsieit_student_s_chapter_logo.jpeg" style="width: 200px;">
+              <div class="text">CSI</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="ACS.jpg"style="width: 200px;">
+              <div class="text">ACS</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="IEEE.jpeg" style="width: 200px;">
+              <div class="text">IEEE</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+    <!-- <nav> -->
+        <!-- <ul> -->
+            <!-- <li class="club"><a href="#">Clubs</a></li> -->
+        <!-- </ul> -->
+    <!-- </nav> -->
+    <!-- <li class="sb"><a href="#">SocialBodies</a></li> -->
+    <!-- <a href=""><img class="center" src="clubs img.jpg" alt="Clubs"></a> -->
+    <!-- <a href=""><img class="rightcenter" src="social img.jpg" alt="SocialBodies"></a> -->
+
+
+    <section class="content">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod et quam cumque deserunt. Quibusdam nostrum officiis natus. Accusamus ipsum asperiores soluta in quae inventore dolor vel Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum sit, ex id autem ea neque commodi aliquam, odio iste laboriosam in, distinctio odit beatae aut magnam enim laudantium earum libero.</p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 My Homepage</p>
+    </footer>
+</body>
+</html>
